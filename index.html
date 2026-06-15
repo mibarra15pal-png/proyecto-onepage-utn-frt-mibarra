@@ -1,102 +1,362 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adaptogenia | Extractos naturales</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adaptogenia | Extracto de Melena de León</title>
+
+  <!-- Bootstrap CSS + Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Google Fonts (tipografía externa vía @import para complementar @font-face) -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="site-header">
-        <nav class="navbar">
-            <a href="#inicio" class="logo">Adaptogenia</a>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#propuesta">Propuesta</a></li>
-                <li><a href="#productos">Productos</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <!-- SECCIÓN INICIO -->
-        <section id="inicio" class="hero section">
-            <div class="hero-text">
-                <p class="tag">Hongos adaptógenos · Patagonia · Bienestar</p>
-                <h1>Extractos naturales para acompañar energía, foco y equilibrio.</h1>
-                <p>Adaptogenia es una propuesta patagónica orientada al desarrollo de productos simples, naturales y funcionales a base de hongos adaptógenos.</p>
-                <a href="https://linktr.ee" target="_blank" class="btn">Ver Adaptogenia</a>
+  <!-- ===================== NAVBAR (Bootstrap JS component) ===================== -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand logo" href="#inicio">
+          <i class="bi bi-flower1"></i> Adaptogenia
+        </a>
+        <button class="navbar-toggler" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#inicio"><i class="bi bi-house-door"></i> Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#propuesta"><i class="bi bi-stars"></i> Propuesta</a></li>
+            <li class="nav-item"><a class="nav-link" href="#productos"><i class="bi bi-droplet-fill"></i> Producto</a></li>
+            <li class="nav-item"><a class="nav-link" href="#media"><i class="bi bi-play-circle"></i> Multimedia</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contacto"><i class="bi bi-envelope"></i> Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section id="inicio" class="hero-section section-pad">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 hero-text" data-animate="fade-up">
+            <span class="tag-pill">
+              <i class="bi bi-geo-alt-fill"></i> Patagonia · Hongos Funcionales · Bienestar
+            </span>
+            <h1 class="hero-title">Melena de León.<br>Claridad natural.</h1>
+            <p class="hero-sub">
+              Extracto hidroalcohólico de <em>Hericium erinaceus</em> elaborado con proceso
+              de doble extracción. Simple, funcional y honesto.
+            </p>
+            <div class="hero-ctas">
+              <a href="#productos" class="btn-main">
+                <i class="bi bi-droplet-fill"></i> Ver el producto
+              </a>
+              <a href="#contacto" class="btn-secondary-link">
+                Consultar &rarr;
+              </a>
             </div>
+          </div>
+          <div class="col-lg-6 d-flex justify-content-center" data-animate="fade-up" style="animation-delay:.15s">
             <div class="hero-card">
-                <img src="images/extractoml.jpeg" alt="Logo ilustrativo de Adaptogenia">
-                <h2>Producto inicial</h2>
-                <p>Extracto hidroalcohólico en gotero de 50 ml.</p>
+              <div class="hero-card-glow"></div>
+              <img src="images/extractoml.jpeg"
+                   alt="Frasco de extracto de Melena de León Adaptogenia"
+                   class="hero-img"
+                   onerror="this.src='https://placehold.co/340x380/1a2e1e/7aad6e?text=Extracto+ML'">
+              <div class="hero-card-label">
+                <i class="bi bi-patch-check-fill"></i>
+                Extracto 50 ml · Gotero
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+      <!-- Indicador scroll -->
+      <a href="#propuesta" class="scroll-down" aria-label="Ir a propuesta">
+        <i class="bi bi-chevron-double-down"></i>
+      </a>
+    </section>
 
-        <!-- SECCIÓN PROPUESTA DE VALOR -->
-        <section id="propuesta" class="section light-section">
-            <h2>Propuesta de valor</h2>
-            <div class="cards">
-                <article class="card">
-                    <h3>Natural</h3>
-                    <p>Productos inspirados en hongos funcionales y procesos de elaboración controlados.</p>
-                </article>
-                <article class="card">
-                    <h3>Local</h3>
-                    <p>Proyecto pensado desde Patagonia, con identidad territorial y mirada productiva.</p>
-                </article>
-                <article class="card">
-                    <h3>Simple</h3>
-                    <p>Comunicación clara, consumo práctico y foco en hábitos sostenibles.</p>
-                </article>
+    <!-- ===================== PROPUESTA DE VALOR ===================== -->
+    <section id="propuesta" class="section-pad section-light">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-eyebrow"><i class="bi bi-leaf"></i> Por qué Adaptogenia</span>
+          <h2 class="section-title">Una propuesta sin vueltas</h2>
+        </div>
+        <div class="row g-4">
+          <!-- Bootstrap CSS component: Cards con icono -->
+          <div class="col-md-4">
+            <div class="value-card">
+              <div class="value-icon"><i class="bi bi-tree"></i></div>
+              <h3>Natural</h3>
+              <p>Hericium erinaceus, agua y alcohol de caña. Sin aditivos, sin rellenos. Lo que dice el frasco es lo que hay.</p>
             </div>
-        </section>
+          </div>
+          <div class="col-md-4">
+            <div class="value-card">
+              <div class="value-icon"><i class="bi bi-geo-alt"></i></div>
+              <h3>Local</h3>
+              <p>Proyecto patagónico con identidad territorial. Producción pequeña, trazable y con mirada productiva propia.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="value-card">
+              <div class="value-icon"><i class="bi bi-check2-circle"></i></div>
+              <h3>Simple</h3>
+              <p>Sin jerga de marketing. Consumo práctico: 20 gotas al día. Foco en hábitos sostenibles de largo plazo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- SECCIÓN PRODUCTOS (CON CANVAS INTEGRADO) -->
-        <section id="productos" class="section">
-            <h2>Productos y desarrollo</h2>
-            <div class="product-layout" style="display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
-                
-                <!-- Columna Izquierda: Texto y Slider -->
-                <div style="flex: 1; min-width: 300px;">
-                    <div class="float-box">Nuevo</div>
-                    <p>El primer producto proyectado es un extracto en gotero. El objetivo es iniciar con lotes pequeños, medir costos reales, escuchar a los usuarios y mejorar la presentación.</p>
-                    <p>La línea puede ampliarse hacia blends de té, cajas de regalo y experiencias educativas sobre bienestar, ciencia aplicada y producción local.</p>
-                    
-                    <!-- Controles interactivos -->
-                    <div class="canvas-controls" style="margin-top: 20px; background: #f4f4f4; padding: 15px; border-radius: 8px;">
-                        <label for="angleSlider" style="display: block; font-weight: bold; margin-bottom: 5px; color: #333;">Modificar Complejidad del Crecimiento:</label>
-                        <input type="range" id="angleSlider" min="0.1" max="1.2" step="0.05" value="0.4" style="width: 100%;">
-                    </div>
+    <!-- ===================== PRODUCTO + CANVAS ===================== -->
+    <section id="productos" class="section-pad section-dark">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-eyebrow light"><i class="bi bi-droplet"></i> Nuestro extracto</span>
+          <h2 class="section-title light">Melena de León</h2>
+        </div>
+        <div class="row g-5 align-items-center">
+          <div class="col-lg-6">
+            <!-- Bootstrap CSS component: Accordion -->
+            <div class="accordion accordion-flush" id="productAccordion">
+              <div class="accordion-item adap-accordion">
+                <h2 class="accordion-header">
+                  <button class="accordion-button adap-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#acc1">
+                    <i class="bi bi-flask me-2"></i> ¿Qué es el extracto?
+                  </button>
+                </h2>
+                <div id="acc1" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                  <div class="accordion-body adap-accordion-body">
+                    Extracto hidroalcohólico obtenido por doble extracción: primero en agua caliente (beta-glucanos) y luego en alcohol (triterpenos). El proceso concentra los compuestos bioactivos del hongo en un formato de uso diario.
+                  </div>
                 </div>
-
-                <!-- Columna Derecha: El Canvas del Algoritmo -->
-                <div style="flex: 1; min-width: 300px; display: flex; justify-content: center;">
-                    <canvas id="canvasGrowth" width="400" height="400" style="background: #1e2522; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);"></canvas>
+              </div>
+              <div class="accordion-item adap-accordion">
+                <h2 class="accordion-header">
+                  <button class="accordion-button adap-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#acc2">
+                    <i class="bi bi-brain me-2"></i> Melena de León y el sistema nervioso
+                  </button>
+                </h2>
+                <div id="acc2" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                  <div class="accordion-body adap-accordion-body">
+                    Hericium erinaceus es reconocido en la literatura científica por su potencial en el soporte cognitivo. Contiene hericenonas y erinacinas, compuestos que estimulan el Factor de Crecimiento Nervioso (NGF). Es objeto de investigación en áreas de memoria, foco y estado de ánimo.
+                  </div>
                 </div>
+              </div>
+              <div class="accordion-item adap-accordion">
+                <h2 class="accordion-header">
+                  <button class="accordion-button adap-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#acc3">
+                    <i class="bi bi-box-seam me-2"></i> Presentación y uso
+                  </button>
+                </h2>
+                <div id="acc3" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                  <div class="accordion-body adap-accordion-body">
+                    Frasco gotero de 50 ml. Dosis sugerida: 20 gotas por día en agua, té o directamente. Sin sabor pronunciado. Lotes pequeños con trazabilidad de origen.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item adap-accordion">
+                <h2 class="accordion-header">
+                  <button class="accordion-button adap-accordion-btn collapsed" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#acc4">
+                    <i class="bi bi-award me-2"></i> ¿Por qué doble extracción?
+                  </button>
+                </h2>
+                <div id="acc4" class="accordion-collapse collapse" data-bs-parent="#productAccordion">
+                  <div class="accordion-body adap-accordion-body">
+                    El agua extrae polisacáridos (beta-glucanos, inmunidad) y el alcohol extrae triterpenos (sistema nervioso, adaptación). Una sola extracción deja compuestos importantes sin aprovechar.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 d-flex flex-column align-items-center gap-3">
+            <canvas id="canvasGrowth" width="360" height="360" class="myco-canvas" aria-label="Simulación visual de crecimiento de micelio"></canvas>
+            <div class="canvas-controls w-100">
+              <label for="angleSlider" class="form-label canvas-label">
+                <i class="bi bi-sliders"></i> Complejidad del micelio
+              </label>
+              <input type="range" id="angleSlider" class="form-range"
+                min="0.1" max="1.2" step="0.05" value="0.4">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-            </div> <!-- Cierre correcto de .product-layout -->
-        </section> <!-- Cierre correcto de #productos -->
+    <!-- ===================== MULTIMEDIA ===================== -->
+    <section id="media" class="section-pad section-light">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-eyebrow"><i class="bi bi-play-circle"></i> Conocé el hongo</span>
+          <h2 class="section-title">Hericium erinaceus en detalle</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="media-wrapper">
+              <!-- VIDEO embebido de YouTube (dominio público/educativo) -->
+              <div class="ratio ratio-16x9 video-frame">
+                <iframe
+                  src="https://www.youtube.com/embed/V9NNlJMuSSQ"
+                  title="Melena de León - Hericium erinaceus"
+                  allowfullscreen
+                  loading="lazy">
+                </iframe>
+              </div>
+              <p class="media-caption">
+                <i class="bi bi-info-circle"></i>
+                Video educativo sobre Hericium erinaceus. Fuente externa.
+              </p>
+            </div>
+            <!-- AUDIO elemento -->
+            <div class="audio-wrapper mt-4">
+              <p class="audio-label"><i class="bi bi-volume-up-fill"></i> Sonido de bosque · Ambiente de origen</p>
+              <audio controls class="adap-audio">
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Tu navegador no soporta el elemento de audio.
+              </audio>
+              <p class="media-caption">
+                <i class="bi bi-info-circle"></i>
+                Audio demostrativo. En la versión final se reemplaza por audio propio del proyecto.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-        <!-- SECCIÓN CONTACTO -->
-        <section id="contacto" class="section contact-section">
-            <h2>Contacto</h2>
-            <p>Para consultas, pedidos o colaboraciones, podés escribir a:</p>
-            <form class="contact-form">
-                <input type="text" placeholder="Nombre" aria-label="Nombre">
-                <input type="email" placeholder="Email" aria-label="Email">
-                <textarea placeholder="Mensaje" aria-label="Mensaje"></textarea>
-                <button type="submit">Enviar consulta</button>
+    <!-- ===================== CONTACTO + FORMULARIO ===================== -->
+    <section id="contacto" class="section-pad section-dark">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-eyebrow light"><i class="bi bi-envelope-open"></i> Hablemos</span>
+          <h2 class="section-title light">Contacto</h2>
+          <p class="section-sub light">Pedidos, consultas o colaboraciones. Respondemos a la brevedad.</p>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-7">
+            <form id="contactForm" class="adap-form" novalidate>
+              <div class="mb-4">
+                <label for="nombre" class="form-label adap-label">
+                  <i class="bi bi-person"></i> Nombre completo
+                </label>
+                <input type="text" id="nombre" name="nombre"
+                  class="form-control adap-input"
+                  placeholder="Tu nombre"
+                  required minlength="2" maxlength="80">
+                <div class="invalid-feedback">Por favor ingresá tu nombre (mín. 2 caracteres).</div>
+              </div>
+
+              <div class="mb-4">
+                <label for="email" class="form-label adap-label">
+                  <i class="bi bi-envelope"></i> Correo electrónico
+                </label>
+                <input type="email" id="email" name="email"
+                  class="form-control adap-input"
+                  placeholder="tu@email.com"
+                  required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}">
+                <div class="invalid-feedback">Ingresá un correo electrónico válido.</div>
+              </div>
+
+              <div class="mb-4">
+                <label for="telefono" class="form-label adap-label">
+                  <i class="bi bi-telephone"></i> Teléfono (opcional)
+                </label>
+                <input type="tel" id="telefono" name="telefono"
+                  class="form-control adap-input"
+                  placeholder="+54 9 297 000-0000"
+                  pattern="[\+]?[\d\s\-\(\)]{6,20}">
+                <div class="invalid-feedback">Formato de teléfono inválido.</div>
+              </div>
+
+              <div class="mb-4">
+                <label for="interes" class="form-label adap-label">
+                  <i class="bi bi-tag"></i> ¿Qué te interesa?
+                </label>
+                <select id="interes" name="interes" class="form-select adap-input" required>
+                  <option value="" disabled selected>Seleccioná una opción</option>
+                  <option value="pedido">Hacer un pedido</option>
+                  <option value="info">Información sobre el producto</option>
+                  <option value="reventa">Reventa / distribución</option>
+                  <option value="colaboracion">Colaboración / proyecto</option>
+                  <option value="otro">Otro</option>
+                </select>
+                <div class="invalid-feedback">Seleccioná una opción.</div>
+              </div>
+
+              <div class="mb-4">
+                <label for="mensaje" class="form-label adap-label">
+                  <i class="bi bi-chat-text"></i> Mensaje
+                </label>
+                <textarea id="mensaje" name="mensaje"
+                  class="form-control adap-input"
+                  rows="4"
+                  placeholder="Contanos lo que necesitás..."
+                  required minlength="10" maxlength="500"></textarea>
+                <div class="invalid-feedback">El mensaje debe tener al menos 10 caracteres.</div>
+              </div>
+
+              <div class="mb-4 form-check adap-check">
+                <input class="form-check-input" type="checkbox" id="aceptar" name="aceptar" required>
+                <label class="form-check-label adap-label" for="aceptar">
+                  Acepto que Adaptogenia use estos datos para responder mi consulta.
+                </label>
+                <div class="invalid-feedback">Necesitamos tu aceptación para continuar.</div>
+              </div>
+
+              <button type="submit" class="btn-main w-100">
+                <i class="bi bi-send"></i> Enviar consulta
+              </button>
+              <div id="formSuccess" class="form-success-msg mt-3" style="display:none;">
+                <i class="bi bi-check-circle-fill"></i> ¡Gracias! Tu mensaje fue enviado correctamente.
+              </div>
             </form>
-        </section>
-    </main>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <footer>
-        <p>© 2026 Adaptogenia. Sitio web educativo desarrollado con HTML y CSS.</p>
-    </footer>
+  </main>
 
-    <script src="script.js"></script>
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row align-items-center py-4">
+        <div class="col-md-6 text-center text-md-start">
+          <span class="footer-logo"><i class="bi bi-flower1"></i> Adaptogenia</span>
+          <p class="footer-copy">© 2026 · Proyecto emprendedor patagónico.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+          <a href="https://linktr.ee" target="_blank" class="footer-link" aria-label="Linktree">
+            <i class="bi bi-link-45deg"></i> Linktree
+          </a>
+          <a href="#contacto" class="footer-link ms-3" aria-label="Contacto">
+            <i class="bi bi-envelope"></i> Contacto
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS (component: Navbar collapse, Accordion) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Script propio -->
+  <script src="script.js"></script>
 </body>
 </html>

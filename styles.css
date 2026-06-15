@@ -55,13 +55,28 @@ body {
 img { max-width: 100%; display: block; }
 
 /* ------- Navbar ------- */
-.navbar {
-  background: rgba(26, 46, 30, .96);
+.navbar,
+.navbar.navbar-expand-lg,
+nav.navbar {
+  background-color: #1a2e1e !important;
+  background: rgba(26, 46, 30, .97) !important;
   backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   padding: .9rem 0;
-  /* CSS3: box-shadow */
-  box-shadow: 0 2px 20px rgba(0,0,0,.3);
+  box-shadow: 0 2px 20px rgba(0,0,0,.35);
   transition: var(--transicion);
+}
+
+/* Menú desplegable mobile también oscuro */
+.navbar-collapse {
+  background-color: #1a2e1e;
+}
+@media (max-width: 991px) {
+  .navbar-collapse {
+    padding: .75rem 1rem 1rem;
+    border-top: 1px solid rgba(122,173,110,.2);
+    margin-top: .5rem;
+  }
 }
 
 .navbar-brand.logo {
